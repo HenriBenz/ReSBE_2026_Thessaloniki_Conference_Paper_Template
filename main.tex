@@ -1,0 +1,119 @@
+%==========================
+% main.tex  (CONTENT ONLY)
+%==========================
+\documentclass[10pt,a4paper,twoside]{article}
+
+% All formatting is in this style file:
+\usepackage{resbe2026}
+\usepackage{overpic}
+\usepackage{float}
+
+
+% Bibliography database
+\addbibresource{references.bib}
+
+% ------------------------
+% Title / Authors
+% ------------------------
+\title{Contribution Title}
+
+\author{%
+First Author$^{1}$\textsuperscript{[0000-1111-2222-3333]} and\\
+Second Author$^{2}$\textsuperscript{[0000-1111-2222-3333]}%
+}
+
+\begin{document}
+
+% First page without page number
+\thispagestyle{empty}
+
+\maketitle
+
+% ------------------------
+% Affiliations / Email
+% ------------------------
+\begin{center}
+\fontsize{10}{12}\selectfont
+\affilline{$^{1}$ Institute for Construction Management, Digital Engineering and Robotics in\\Construction, RWTH Aachen University, Aachen, Germany}
+\affilline{$^{2}$ Princeton University, Princeton, USA}
+\affilline{\href{mailto:benz@icom.rwth-aachen.de}{\texttt{benz@icom.rwth-aachen.de}}}
+\end{center}
+
+\vspace{35pt}% authors -> abstract
+
+% ------------------------
+% Abstract + Keywords
+% ------------------------
+\begin{resbeabstract}
+The abstract should summarize the contents of the paper in short terms, i.e. 150-250 words; justified between the margins and using the font/size specified below.
+\end{resbeabstract}
+
+\resbekeywords{First Keyword, Second Keyword, Third Keyword, Forth Keyword, Sixth Key-word.}
+
+\newpage
+
+% ------------------------
+% Body (template content)
+% ------------------------
+\section{First Section}
+
+\subsection{A Subsection Sample}
+Please note that the first paragraph of a section or subsection is not indented.
+The first paragraph that follows a table, figure, equation etc. does not have an indent either.
+
+Subsequent paragraphs, however, are indented.
+
+\begin{p1a}
+Figures/Tables should be centred within the page width and numbered sequentially.
+Figures/Tables should be numbered separately. Multiple figures should be referred using letters (e.g. Fig. 1a or 1b).
+
+In the text a figure/table is referred as “Fig. 1a shows the drag coefficient…” or “the slope of the lift coefficient switches from negative to positive at the critical Re (Fig. 1b)”.
+
+Do use the table function in Word to create and format tables. Do not use Powerpoint or Excel to create tables. Do not submit tables as image files. Tables are published in black and white.
+\end{p1a}
+
+\subsubsection{Sample Heading (Third Level)}
+Only two levels of headings should be numbered. Lower level headings remain unnumbered; they are formatted as run-in headings.
+
+\paragraph{Sample Heading (Forth Level)}
+The contribution should contain no more than four levels of headings.
+
+\begin{table}[ht]
+\caption{Table captions should be placed above the tables.}
+\centering
+\begin{tabular}{lll}
+\toprule
+Heading level & Example & Font size and style \\
+\midrule
+Title (centered) & Lecture Notes & 14 point, bold \\
+1st-level heading & 1 Introduction & 12 point, bold \\
+2nd-level heading & 2.1 Printing Area & 10 point, bold \\
+3rd-level heading & Run-in Heading in Bold. Text follows & 10 point, bold \\
+4th-level heading & Lowest Level Heading. Text follows & 10 point, italic \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Displayed equations are centered and set on a separate line and numbered sequentially.
+Equations must be referred to in the text as “Eq. (1)” or “Eqs. (1), (2) and (3)”.
+
+\begin{equation}
+x + y = z
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{Figures/Fig1.png}
+  \caption{A figure caption is always placed below the illustration. Short captions are centered, while long ones are justified. The macro button chooses the correct format automatically.}
+\end{figure}
+
+
+Example citation in square brackets \cite{author2016}.
+
+% ------------------------
+% References
+% ------------------------
+\section*{References}
+\printbibliography[heading=none]
+
+\end{document}
